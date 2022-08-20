@@ -21,3 +21,8 @@ Skype			6/30/2022	8.85.0.409
 Zoom			6/30/2022	5.11.1
 Software Center		6/30/2022	Unknown
 Deep Freeze seed	6/30/2022	v853
+
+
+**** GitHub notes:
+I had a shortcut that linked to the program to run it in administrator, it needs to be run as administrator
+Also, there were folders with a background image and programs in them, however, they could not be opened up to the public.

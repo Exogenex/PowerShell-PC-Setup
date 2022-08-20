@@ -1,0 +1,44 @@
+Group policy:
+Set the Telemetry to "0 – Security"
+	Windows Key+R
+	Type "gpedit.msc", hit enter
+	Local Computer Policy/Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Allow Telemetry
+	Enable
+	In options choose "0 – Security [Enterprise Only]"
+
+Install the needed version of Adobe: \\onestop
+
+Set default apps:
+	Go to setting and search for default apps
+	Video player: VLC
+	Web browser: Chrome
+	Click "Choose apps by file type"
+	.pdf: Adobe Acrobat
+
+Google Chrome:
+	Set the homepage to https://www.spcollege.edu
+	Block third party cookies
+	Turn off autofill settings
+	Disable automatic updates
+	Clear all browsing data when done
+
+Firefox:
+	Set the homepage to https://www.spcollege.edu
+	Set default search engine to Google
+	Block third party cookies
+	Turn off autofill settings
+	Disable automatic updates
+	Clear all browsing data when done
+
+VLC: Disable automatic updates
+Notepad++: Diable automatic updates
+Java: Diable automatic updates
+
+Check for and solve any compatibility issues of "My Courses" with all the browsers
+https://mycourses.spcollege.edu/d2l/systemcheck
+
+Domain: Domain Join to ACAD: Locate "This PC" and right-click > Properties > "Change Settings" > "Change..." > type Acad.spcollege.edu in Domain Field > enter credentials (Username ADMIN\t, Password: t)
+Add Domain Admin Permissions (ADMIN\Domain Admins, ADMIN\Domain Users, ADMIN\TRS)
+In start search lusrmgr.msc > Groups > Locate and double-click Administrators group > Add ADMIN\Domain Admins, ADMIN\Domain Users, ADMIN\TRS > Apply > Ok
+Install SCCM: C:\Deploy\TSS Setup Script\Installers\Software Center\CCMBatSetup.bat (As administrator)
+Undomain Join: Locate "This PC" and right-click > Properties > "Change Settings" > "Change..." > type Acad.spcollege.edu in "Workgroup" Field > enter credentials (Username ADMIN\t, Password: t)
